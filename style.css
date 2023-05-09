@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./pxfuel.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login_box{
+    background-color: transparent;
+    border: 1px solid floralwhite;
+    padding: 50px 20px;
+    width: 400px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    color: floralwhite;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input_box{
+    width: 90%;
+    height: 40px;
+    position: relative;   
+    margin-bottom: 20px;   
+    border-bottom: 1px solid floralwhite;   
+    background-color: transparent;   
+}
+
+.input_box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: floralwhite;
+}
+
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50);
+    font-size: 20px;
+    color: floralwhite;
+    transition: .5s;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50);
+    font-size: 20px;
+    color: floralwhite;
+}
+
+
+.remember{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: floralwhite;
+    margin-bottom: 20px;
+}
+
+.remember label{
+    margin: 0 50px;
+    font-size: 16px;
+    color: floralwhite;
+}
+
+.remember a{
+    color: floralwhite;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.log{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.log button{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;      
+    border: none;       
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.log button:hover{
+    background-color: transparent;
+    border: 1px sold floralwhite;
+    color: floralwhite;
+    cursor: pointer;
+}
+
+.reg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg p{
+    font-size: 18px;
+    color: floralwhite;
+    margin-right: 5px;
+}
+
+.reg a{
+    font-size: 18px;
+    color: floralwhite;
+    font-weight: bold;
+}
+
+.input_box input:focus ~ label,
+.input_box input:valid ~label{
+    top: 0px;
+}
